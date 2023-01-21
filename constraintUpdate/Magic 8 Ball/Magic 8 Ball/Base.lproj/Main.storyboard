@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="cxo-ht-kqq">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFF-q7-osU">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="126.33333333333333"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRk-yr-Ulq">
+                                                <rect key="frame" x="41.333333333333343" y="42.333333333333329" width="310.66666666666663" height="42"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="XRk-yr-Ulq" firstAttribute="centerY" secondItem="iFF-q7-osU" secondAttribute="centerY" id="KuK-I6-60h"/>
+                                            <constraint firstItem="XRk-yr-Ulq" firstAttribute="centerX" secondItem="iFF-q7-osU" secondAttribute="centerX" id="NiP-Rz-uxN"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egv-RX-fiD">
+                                        <rect key="frame" x="0.0" y="127.33333333333337" width="393" height="400"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="fb7-JG-EhP">
+                                                <rect key="frame" x="121.66666666666669" y="124.99999999999997" width="150" height="150.00000000000003"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="R6J-cL-ELP"/>
+                                                    <constraint firstAttribute="width" constant="150" id="nZu-vI-laj"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="fb7-JG-EhP" firstAttribute="centerX" secondItem="Egv-RX-fiD" secondAttribute="centerX" id="E1x-9F-0RB"/>
+                                            <constraint firstItem="fb7-JG-EhP" firstAttribute="centerY" secondItem="Egv-RX-fiD" secondAttribute="centerY" id="eDQ-Or-7Hp"/>
+                                            <constraint firstItem="fb7-JG-EhP" firstAttribute="centerX" secondItem="Egv-RX-fiD" secondAttribute="centerX" id="gOX-mu-qf7"/>
+                                            <constraint firstItem="fb7-JG-EhP" firstAttribute="centerY" secondItem="Egv-RX-fiD" secondAttribute="centerY" id="sf9-Mq-hJd"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMt-yh-CnM">
+                                        <rect key="frame" x="0.0" y="528.33333333333337" width="393" height="230.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUf-mn-cjQ">
+                                                <rect key="frame" x="154" y="90.333333333333258" width="85" height="50"/>
+                                                <color key="backgroundColor" red="0.109803915" green="0.26666668059999998" blue="0.49803921579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="KTN-LO-Zj8"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="fLY-eD-9gD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="tintColor" red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Shake">
+                                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="AskBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xXG-V8-jvm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="eUf-mn-cjQ" firstAttribute="centerY" secondItem="VMt-yh-CnM" secondAttribute="centerY" id="MV6-oJ-HG5"/>
+                                            <constraint firstItem="eUf-mn-cjQ" firstAttribute="centerX" secondItem="VMt-yh-CnM" secondAttribute="centerX" id="Tbw-pG-pOy"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="cxo-ht-kqq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UxO-tU-3Xe"/>
+                            <constraint firstItem="cxo-ht-kqq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bWL-nj-N2J"/>
+                            <constraint firstItem="cxo-ht-kqq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gn7-rs-Z4X"/>
+                            <constraint firstItem="cxo-ht-kqq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jG3-PV-fb7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerImageView" destination="fb7-JG-EhP" id="HyP-vi-MKN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball1" width="305" height="273.66665649414062"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
